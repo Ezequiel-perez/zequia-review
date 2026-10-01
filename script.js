@@ -141,68 +141,29 @@ modal.addEventListener(
 // WHATSAPP
 // ======================================
 
-const whatsapp =
-    document.getElementById(
-        "whatsapp"
-    );
-
-
-/*
-    IMPORTANTE:
-
-    Más adelante sustituiremos esto
-    por tu número comercial.
-
-    Formato México:
-
-    52 + número de 10 dígitos
-
-    SIN:
-    +
-    espacios
-    guiones
-*/
-
 const numeroWhatsApp = "522811011364";
-
 
 const mensajeWhatsApp =
     "Hola, vi la demostración de ZEQUIA Review y me gustaría recibir información para mi negocio.";
 
+const botonesWhatsApp =
+    document.querySelectorAll(".whatsapp");
 
-whatsapp.addEventListener(
-    "click",
-    (evento) => {
+
+botonesWhatsApp.forEach((boton) => {
+
+    boton.addEventListener("click", (evento) => {
 
         evento.preventDefault();
-
-
-        if (
-            numeroWhatsApp === ""
-        ) {
-
-            alert(
-                "Esta es una demostración. Aquí se abrirá WhatsApp para solicitar ZEQUIA Review."
-            );
-
-            return;
-
-        }
-
 
         const enlace =
             "https://wa.me/" +
             numeroWhatsApp +
             "?text=" +
-            encodeURIComponent(
-                mensajeWhatsApp
-            );
+            encodeURIComponent(mensajeWhatsApp);
 
+        window.open(enlace, "_blank");
 
-        window.open(
-            enlace,
-            "_blank"
-        );
+    });
 
-    }
-);
+});
