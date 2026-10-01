@@ -163,7 +163,7 @@ const whatsapp =
     guiones
 */
 
-const numeroWhatsApp = "";
+const numeroWhatsApp = "522811011364";
 
 
 const mensajeWhatsApp =
