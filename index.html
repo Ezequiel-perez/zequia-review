@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="ZEQUIA Review - Una forma sencilla de facilitar las reseñas de tus clientes mediante NFC y QR.">
+
+    <title>ZEQUIA Review</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <a class="marca" href="#">
+        ZEQU<span>IA</span>
+    </a>
+
+    <a href="#contacto" class="nav-contacto">
+        Quiero uno
+    </a>
+</header>
+
+
+<main>
+
+    <!-- =========================
+         PORTADA
+    ========================== -->
+
+    <section class="hero">
+
+    <!-- Reseñas flotantes decorativas -->
+
+    <div class="review-flotante review-1">
+        <div class="review-avatar">M</div>
+        <div>
+            <div class="review-stars">★★★★★</div>
+            <strong>Excelente servicio</strong>
+            <small>Muy recomendado</small>
+        </div>
+    </div>
+
+    <div class="review-flotante review-2">
+        <div class="review-avatar">A</div>
+        <div>
+            <div class="review-stars">★★★★★</div>
+            <strong>Muy buena atención</strong>
+            <small>Gran experiencia</small>
+        </div>
+    </div>
+
+    <div class="review-flotante review-3">
+        <div class="review-avatar">J</div>
+        <div>
+            <div class="review-stars">★★★★★</div>
+            <strong>Todo excelente</strong>
+            <small>Volvería nuevamente</small>
+        </div>
+    </div>
+
+
+    <!-- Puntos luminosos del mapa -->
+
+    <div class="punto-mapa punto-1"></div>
+    <div class="punto-mapa punto-2"></div>
+    <div class="punto-mapa punto-3"></div>
+
+
+    <!-- Contenido principal -->
+
+    <div class="hero-contenido">
+
+        <div class="estrellas-superiores">
+            ★★★★★
+        </div>
+
+        <p class="eyebrow">
+            RESEÑAS INTELIGENTES PARA NEGOCIOS
+        </p>
+
+        <h1>
+            Haz que más clientes
+            <span>encuentren y elijan</span>
+            tu negocio.
+        </h1>
+
+        <p class="hero-descripcion">
+            Convierte una buena experiencia en una oportunidad
+            para fortalecer la reputación digital de tu negocio.
+        </p>
+
+        <a href="#demo" class="boton boton-dorado">
+            Pruébalo tú mismo
+            <span class="flecha">→</span>
+        </a>
+
+        <p class="microtexto">
+            NFC + QR · Sin aplicaciones · En segundos
+        </p>
+
+    </div>
+
+    <div class="indicador">
+        ↓
+    </div>
+
+</section>
+
+
+    <!-- =========================
+         PROBLEMA / BENEFICIO
+    ========================== -->
+
+    <section class="seccion reputacion">
+
+        <p class="eyebrow">
+            TU REPUTACIÓN DIGITAL IMPORTA
+        </p>
+
+        <h2>
+            Tus clientes ya tienen una opinión.
+            <span>Facilita que la compartan.</span>
+        </h2>
+
+        <p class="texto-seccion">
+            ZEQUIA Review reduce los pasos necesarios para que
+            un cliente llegue al espacio donde puede compartir
+            su experiencia con tu negocio.
+        </p>
+
+
+        <div class="beneficios">
+
+            <article class="tarjeta-beneficio">
+
+                <div class="icono-beneficio">
+                    ★
+                </div>
+
+                <h3>Más reseñas</h3>
+
+                <p>
+                    Facilita el acceso para que tus clientes
+                    compartan su experiencia.
+                </p>
+
+            </article>
+
+
+            <article class="tarjeta-beneficio">
+
+                <div class="icono-beneficio">
+                    ✓
+                </div>
+
+                <h3>Más confianza</h3>
+
+                <p>
+                    Las experiencias de otros clientes ayudan
+                    a nuevos usuarios a conocer tu negocio.
+                </p>
+
+            </article>
+
+
+            <article class="tarjeta-beneficio">
+
+                <div class="icono-beneficio">
+                    ◎
+                </div>
+
+                <h3>Mayor presencia</h3>
+
+                <p>
+                    Fortalece la presencia digital que tus
+                    futuros clientes encuentran en línea.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DEMOSTRACIÓN
+    ========================== -->
+
+    <section class="demo" id="demo">
+
+        <div class="demo-encabezado">
+
+            <p class="eyebrow">
+                AHORA PRUÉBALO TÚ
+            </p>
+
+            <h2>
+                Así de sencillo será
+                <span>para tus clientes.</span>
+            </h2>
+
+            <p>
+                Imagina que acabas de recibir un excelente servicio.
+            </p>
+
+        </div>
+
+
+        <div class="telefono">
+
+            <div class="telefono-superior">
+                <span></span>
+            </div>
+
+
+            <div class="demo-logo">
+                ZEQU<span>IA</span>
+            </div>
+
+
+            <p class="pregunta">
+                ¿Cómo fue tu experiencia?
+            </p>
+
+
+            <div class="estrellas-demo">
+
+                <button data-valor="1"
+                        aria-label="1 estrella">★</button>
+
+                <button data-valor="2"
+                        aria-label="2 estrellas">★</button>
+
+                <button data-valor="3"
+                        aria-label="3 estrellas">★</button>
+
+                <button data-valor="4"
+                        aria-label="4 estrellas">★</button>
+
+                <button data-valor="5"
+                        aria-label="5 estrellas">★</button>
+
+            </div>
+
+
+            <p id="mensajeEstrellas">
+                Toca una estrella
+            </p>
+
+
+            <button id="botonReview"
+                    class="boton-review">
+
+                DEJAR MI RESEÑA
+
+            </button>
+
+
+            <p class="demo-aclaracion">
+                Demostración interactiva
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CÓMO FUNCIONA
+    ========================== -->
+
+    <section class="seccion funcionamiento">
+
+        <p class="eyebrow">
+            SIMPLE PARA TUS CLIENTES
+        </p>
+
+        <h2>
+            Tres pasos.
+            <span>Eso es todo.</span>
+        </h2>
+
+
+        <div class="pasos">
+
+            <article class="paso">
+
+                <div class="numero">
+                    01
+                </div>
+
+                <div class="simbolo">
+                    ◉
+                </div>
+
+                <h3>Acerca</h3>
+
+                <p>
+                    El cliente acerca su teléfono
+                    a la zona NFC de la placa.
+                </p>
+
+            </article>
+
+
+            <article class="paso">
+
+                <div class="numero">
+                    02
+                </div>
+
+                <div class="simbolo">
+                    ↗
+                </div>
+
+                <h3>Abre</h3>
+
+                <p>
+                    El teléfono abre el acceso configurado
+                    para el negocio.
+                </p>
+
+            </article>
+
+
+            <article class="paso">
+
+                <div class="numero">
+                    03
+                </div>
+
+                <div class="simbolo">
+                    ★
+                </div>
+
+                <h3>Comparte</h3>
+
+                <p>
+                    El cliente puede compartir
+                    su experiencia.
+                </p>
+
+            </article>
+
+        </div>
+
+
+        <div class="alternativa-qr">
+
+            <strong>¿Su teléfono no utiliza NFC?</strong>
+
+            <span>
+                También puede escanear el código QR.
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PRODUCTO
+    ========================== -->
+
+    <section class="producto">
+
+        <div class="producto-contenido">
+
+            <p class="eyebrow">
+                ZEQUIA REVIEW
+            </p>
+
+            <h2>
+                Tu servicio deja una buena impresión.
+                <span>Haz que también deje una reseña.</span>
+            </h2>
+
+            <p class="producto-descripcion">
+                Una solución física y digital preparada
+                para integrarse en el mostrador de tu negocio.
+            </p>
+
+
+            <div class="incluye">
+
+                <div>
+                    <span>✓</span>
+                    Placa personalizada
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Tecnología NFC
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Código QR
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Configuración personalizada
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Lista para utilizar
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FRASE
+    ========================== -->
+
+    <section class="frase">
+
+        <div class="estrellas-superiores">
+            ★★★★★
+        </div>
+
+        <blockquote>
+            “Haz más fácil que una buena experiencia
+            se convierta en una recomendación.”
+        </blockquote>
+
+        <p>
+            ZEQUIA Review
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACTO
+    ========================== -->
+
+    <section class="contacto" id="contacto">
+
+        <p class="eyebrow">
+            PARA TU NEGOCIO
+        </p>
+
+        <h2>
+            ¿Te gustaría tener
+            <span>ZEQUIA Review?</span>
+        </h2>
+
+        <p>
+            Solicita información y descubre cómo
+            podemos prepararlo para tu negocio.
+        </p>
+
+
+        <a href="#"
+           id="whatsapp"
+           class="boton boton-dorado">
+
+            Solicitar información
+
+        </a>
+
+
+        <div class="footer-marca">
+
+            <strong>
+                ZEQU<span>IA</span>
+            </strong>
+
+            <small>
+                Tecnología que conecta.
+            </small>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================
+     MODAL DE DEMOSTRACIÓN
+========================== -->
+
+<div class="modal" id="modal">
+
+    <div class="modal-contenido">
+
+        <div class="check">
+            ✓
+        </div>
+
+        <p class="eyebrow">
+            ASÍ DE SENCILLO
+        </p>
+
+        <h2>
+            Esto es ZEQUIA Review.
+        </h2>
+
+        <p>
+            En la versión configurada para un negocio,
+            este acceso puede dirigir al cliente al espacio
+            preparado para compartir su experiencia.
+        </p>
+
+        <button id="cerrarModal">
+            Continuar explorando
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
